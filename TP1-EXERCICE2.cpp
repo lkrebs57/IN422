@@ -23,6 +23,7 @@ int main ()
   int MyThreadID=1;
 
 // CREAT THE THREAD HERE
+    cout<<"================= TP1 EX2 ================= : "<<endl;
     for (int t = 0; t < NUM_THREADS; t++) {
         rc = pthread_create(&threads[t], NULL, PrintSentence, &t);
         pthread_join(threads[t], NULL);
@@ -59,3 +60,4 @@ int main ()
    pthread_exit(NULL);
 
 }
+
