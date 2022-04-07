@@ -20,7 +20,7 @@ int main()
     clock_t temps_systeme; //Nombre de tops d'Horloge
 
 	//////////////////////////////////////////////
-	cout << "--- TP 1 EXO 1 ---" << endl;
+	cout<<"================= TP1 EX1 ================= : "<<endl;
 	cout <<	"Entrez une chaine de caracteres:" << endl; //Demande de rentrer une chaine
 
 	///////////////////////////////////////////////////////////////////////////////////
