@@ -57,11 +57,10 @@ int main()
     }
     int SCH[biggest_p]={0};
 
-    cout <<"sum="<<sum<<endl;
-    cout <<"result_d="<<result_d<<endl;
 
     if (sum<=result_d)
-    {
+    {   cout <<"Acceptation : "<<sum<<" < "<<result_d<<endl;
+        cout <<"We can compute\n"<<endl;
         for (int i=0; i<sizeof(Task_r)/sizeof(double);i++)
         {
             int k=max_emp(Task_r);
@@ -96,11 +95,19 @@ int main()
 
         }
         for (int i = 0; i < biggest_p; i++)
-            cout << SCH[i] << " ";
+            if(SCH[i]!=0)
+            {
+                cout <<"Task "<<SCH[i] << " ";
+            }
+            else
+            {
+                cout <<"None ";
+            }
+
         cout << endl;
     }
     else
-    {
+    {   cout <<"Acceptation : "<<sum<<" > "<<result_d<<endl;
         cout<<"The scheduling can't be done"<<endl;
     }
 }
